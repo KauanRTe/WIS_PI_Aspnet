@@ -22,6 +22,11 @@ body {
     background: radial-gradient(circle, rgba(39,202,228,1) 0%, rgba(232,232,255,1) 41%, rgba(0,212,255,1) 100%);
 }
 
+header{
+    display: flex;
+    justify-content: center;
+
+}
 .navbar-wis {
     position: relative;
     display: flex;
@@ -32,6 +37,7 @@ body {
     padding-bottom: .5rem;
     border: 1px solid white;
     border-radius: 2px 30px;
+    width: 77%;
 }
 
 .container-wis-navbar{
@@ -51,8 +57,8 @@ body {
 }
 
 .nav-item > input{
-    width: 30vw;
-    margin-left: -25vw;
+    width: 25vw;
+    margin-left: 1vw;
     border: none;
     border-bottom: 1px solid gray;
 }
@@ -62,9 +68,16 @@ body {
     height: 28px;
 }
 
+#icon-login{
+    width: 28px;
+    height: 28px;
+    margin-left: -8vw;
+}
+
 .nav-login-wis{
     margin-left: 10vw;
     color: black;
+    text-decoration: none;
 }
 .container-footer{
     justify-content: center;
@@ -87,4 +100,84 @@ body {
     margin-right: 1vw;
     margin-top: 1.2vh;
 }
+
+/* BODY CSS */
+
+#part-one-body {
+    background-color: rgba(39,202,228, 0.3);
+    border: 1px solid white;
+    border-radius: 30px 4px;
+    margin-left: -3.5vw;
+    display: flex;
+    width: 110.5%;
+    height: 45vh;
+}
+
+#legenda-text-pratica{
+    display: inline;
+    background-color: black;
+    color: white;
+    margin-top: 2px;
+    margin-left: 10px;
+    height: 3vh;
+}
+
+#container-image-home{
+    display: flex;
+    height: 100%;
+    width: 30%;
+    
+}
+
+#container-image-home img{
+    height: auto;
+    width: auto;
+}
+
+#text-meditacao{
+    margin-left: 15vw;
+    margin-top: 1vh;
+    width: 70%;
+    height: 100%;
+}
+
+#text-meditacao span {
+        font-family: Verdana;
+        font-size: 39px;
+        color: white;
+}
+
+#text-meditacao p{
+    font-family: Verdana;
+    font-size: 16px;
+    color: white;
+    margin-left: -14vw;
+    margin-top: 1vh;
+    width: 52vw;
+    height: 5vh;
+}
+
+    #text-meditacao li {
+        font-family: Verdana;
+        font-size: 16px;
+        color: white;
+        margin-left: -14.5vw;
+        width: 52vw;
+        height: 5vh;
+    }
+
+.nav-link-meditacao{
+    margin-top: 10px;
+    border: none;
+    border: 1px solid white;
+    border-radius: 0px 0px 5px 5px;
+    margin-left: 5px;
+    background-color: white;
+    color: black;
+    font-family: verdana;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+
 
