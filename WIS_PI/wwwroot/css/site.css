@@ -13,6 +13,17 @@ html {
   min-height: 100%;
 }
 
+.js .anime {
+    opacity: 0;
+    transform: translate3d(-50px, 0px, 0px);
+}
+
+.js .anime-init {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+    transition: .3s all ease;
+}
+
 body {
   margin-bottom: 60px;
 }
@@ -150,10 +161,11 @@ header{
     background-color: rgba(39,202,228, 0.3);
     border: 1px solid white;
     border-radius: 30px 4px;
-    margin-left: -3.5vw;
+    margin-left: -10vw;
+    margin-top: 5vh;
     display: flex;
-    width: 110.5%;
-    height: 45vh;
+    width: 130.5%;
+    height: 70vh;
 }
 
 #legenda-text-pratica{
@@ -161,6 +173,7 @@ header{
     width: 10vw;
     display: flex;
     color: white;
+    font-size: 25px;
     height: 3vh;
     margin-top: 1vh;
     margin-left: 1vw;
@@ -169,6 +182,7 @@ header{
 #container-image-home{
     display: flex;
     height: 100%;
+   
 }
 
 #image-home {
@@ -188,14 +202,14 @@ header{
 
 #text-meditacao span {
         font-family: Verdana;
-        font-size: 39px;
+        font-size: 50px;
         color: white;
         
 }
 
 #text-meditacao p{
     font-family: Verdana;
-    font-size: 16px;
+    font-size: 25px;
     color: white;
     margin-left: -14vw;
     margin-top: 1vh;
@@ -203,10 +217,14 @@ header{
     height: 5vh;
 }
 
-    #text-meditacao li {
+#text-meditacao ul{
+    margin-top: 3vw;
+}
+#text-meditacao li {
         font-family: Verdana;
-        font-size: 16px;
+        font-size: 25px;
         color: white;
+        margin-top: 2vh;
         margin-left: -14.5vw;
         width: 52vw;
         height: 5vh;
@@ -216,36 +234,177 @@ header{
     margin-top: 10px;
     border: none;
     border: 1px solid white;
-    border-radius: 0px 0px 5px 5px;
+    border-radius: 0px 0px 15px 15px;
     margin-left: 5px;
+    margin-top: 25px;
     background-color: white;
     color: black;
     font-family: verdana;
-    font-size: 14px;
+    font-size: 25px;
     text-decoration: none;
 }
 
 /* PART COMUNIDADE */
 
-.part-comunidade{
+.part-comunidade {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: white;
+    background-size: cover;
     height: 70vh;
-    width: 145.65%;
+    width: 147.1%;
+    margin-top: 10vh;
+    margin-left: -16vw
+}
+
+.container-comunidade{
+    background-color: rgba(255,255,255,0.7);
+    display: grid;
+    height: 100%;
+    width: 100%;
+}
+
+.container-comunidade h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 42px;
+    color: black;
+    margin-top: 3vh;
+    margin-left: 4vw;
+}
+
+.container-comunidade ul{
+    margin-top: -25vh;
+}
+
+.container-comunidade ul li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color: black;
     margin-top: 5vh;
-    margin-left: -17vw
+    margin-left: 4vw;
 }
 
-.text-comunidade{
-    background-color: blue;
-    height: 95%;
-    width: 95%;
+.container-chat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    height: 100%;
+    width: 50%;
+    margin-right: 5vw;
 }
 
-.text-comunidade h1{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.chat-box{
+    background-color: yellow;
+    height: 90%;
+    width: 70%;
+    border: 1px solid black;
+    border-radius: 10px 10px;
 }
+
+.container-chat header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8%;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 10px 10px 0px 0px;
+    background-color: white;
+}
+
+.container-chat header p{
+    font-family: Verdana;
+    font-size: 19px;
+
+}
+
+.messages{
+    display: flex;
+    align-items: center;
+    height: 7vh;
+    width: 100%;
+    background-color: red;
+    margin-top: 1vh;
+}
+
+.container-photo{
+    height: 100%;
+    width: 17%;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 7px 7px;
+}
+
+.container-photo img{
+    border-radius: 10px 10px;
+    width: 104.5%;
+    height: 103%;
+    margin-left: -1.5px;
+    margin-top: -1px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.container-message{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 70%;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 16px 0px;
+    margin-left: 5px;
+}
+
+.container-message p{
+    font-family: Verdana;
+    font-size: 16px;
+    margin-top: 1vh;
+    margin-left: 5px;
+}
+
+.send-message{
+    display: flex;
+    align-items: center;
+    background-color: orange;
+    margin-top: 45.9vh;
+    border-radius: 10px 10px 10px 10px; 
+    bottom: 0;
+    height: 4vh;
+    width: 100%;
+}
+
+.send-message input{
+    background-color: orange;
+    width: 75%;
+    height: 100%;
+    border: none;
+    margin-left: 10px;
+}
+
+.send-message img{
+    width: 32px;
+    height: 32px;
+    margin-left: 10px
+}
+
+#send-message-button{
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
+    background-color: green;
+    border: none;
+    border-radius: 32px 32px;
+}
+
+#send-message-button input{
+    width: 100%;
+    height: 100%
+}
+
+
+
 
 
