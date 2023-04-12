@@ -25,8 +25,7 @@ namespace WIS_PI.Models
         [DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}", ApplyFormatInEditMode = true)]
         public DateTime DataNascimento { get; set; }
 
-        [Required]
-        [MaxLength(50)]
-        public ICollection<Sexo>? Sexo{ get; set; }
+        public virtual Genero? Genero { get; set; }
+        public int GeneroId { get; set; }
     }
 }
