@@ -91,10 +91,6 @@ namespace WIS_PI.Controllers
                         Console.WriteLine("Já existe o e-mail cadastrado.");
                     }
                 }
-
-
-
-
             }
             ViewData["GeneroId"] = new SelectList(_context.Set<Genero>(), "GeneroId", "NomeGenero", usuario.GeneroId);
             return View(usuario);
@@ -113,7 +109,7 @@ namespace WIS_PI.Controllers
             {
                 return NotFound();
             }
-            ViewData["GeneroId"] = new SelectList(_context.Set<Genero>(), "GeneroId", "GeneroId", usuario.GeneroId);
+            ViewData["GeneroId"] = new SelectList(_context.Set<Genero>(), "GeneroId", "NomeGenero", usuario.GeneroId);
             return View(usuario);
         }
 

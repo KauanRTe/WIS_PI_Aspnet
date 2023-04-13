@@ -523,5 +523,209 @@ header{
     }
 
 
+/* CSS DO FORMS CREATE */
 
+#body-page-cadastro {
+    background-image: url(../images/background-image.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#main-cadastro {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container-cadastro{
+    position: absolute;
+    height: 70vh;
+    width: 40vw;
+    background-color: white;
+    border: none;
+    margin-top: 3vh;
+    margin-left: 3vw;
+
+}
+#header-cadastro{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    height: 5vh;
+    width: 100%;
+}
+
+#header-cadastro h1{
+    font-family: 'Lucida Sans';
+    color: darkblue;
+    
+}
+
+.container-forms {
+    padding-top: 2vh;
+    height: 100%;
+    width: 100%;
+}
+
+.form label {
+    margin-top: 2vh;
+    margin-left: 15px;
+    font-family: Verdana;
+    font-size: 20px;
+    color: darkblue;
+}
+
+
+.form input{
+    margin-left: 15px;
+    border: none;
+    border-bottom: 2px solid gray;
+    height: 3vh;
+    width: 37vw;
+}
+
+.form {
+    width: 70%;
+    height: 5vh;
+    display: grid;
+    padding-bottom: 9vh;
+}
+
+.form select{
+    border: none;
+    border-bottom: 2px solid gray;
+    height: 3vh;
+    width: 40vw;
+    margin-left: 15px;
+}
+
+.form-email{
+    width: 70%;
+    height: 5vh;
+    display: grid;
+    padding-bottom: 9vh;
+
+}
+
+.form-senha {
+    width: 70%;
+    height: 5vh;
+    display: grid;
+    padding-bottom: 9vh;
+    margin-left: 3vw;
+}
+
+.form-email label {
+    margin-top: 2vh;
+    margin-left: 15px;
+    font-family: Verdana;
+    font-size: 20px;
+    color: darkblue;
+}
+
+.form-senha label {
+    margin-top: 2vh;
+    font-family: Verdana;
+    font-size: 20px;
+    color: darkblue;
+}
+
+.form-email input{
+    border: none;
+    border-bottom: 2px solid gray;
+    height: 3vh;
+    width: 15vw;
+    margin-left: 15px;
+    
+}
+
+.form-senha input {
+    border: none;
+    border-bottom: 2px solid gray;
+    height: 3vh;
+    width: 16vw;
+}
+
+.email-senha {
+    margin-top: 2vh;
+    display: flex;
+    height: auto;
+    width: auto;
+}
+
+.datanascimento-genero {
+    margin-top: 5vh;
+    display: flex;
+    height: auto;
+    width: auto;
+}
+
+
+.form-datanascimento label {
+    margin-left: 15px;
+    font-family: Verdana;
+    font-size: 20px;
+    color: darkblue;
+}
+
+.form-genero {
+    width: 70%;
+    height: 5vh;
+    display: grid;
+    padding-bottom: 9vh;
+    margin-left: 5vw;
+}
+    .form-genero label {
+        font-family: Verdana;
+        font-size: 20px;
+        color: darkblue;
+    }
+
+.form-datanascimento input {
+    border: none;
+    border-bottom: 2px solid gray;
+    height: 3vh;
+    width: 15vw;
+    margin-left: 15px;
+}
+
+.form-genero select {
+    border: none;
+    border-bottom: 2px solid gray;
+    height: 3vh;
+    width: 16vw;
+}
+
+.form-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.form-button input{
+    margin-top: 5vh;
+    height: 5vh;
+    width: 15vw;
+}
+
+.btn-cadastrar{
+    color: white;
+    font-size: 22px;
+    border: none;
+}
+
+#back-login{
+    display: flex;
+    justify-content: center;
+    margin-left: -2.8vw;
+    width: 100%;
+}
+
+#shadow-forms {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    height: 70vh;
+    width: 40vw;
+}
 
