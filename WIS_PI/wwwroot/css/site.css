@@ -39,12 +39,14 @@ body::-webkit-scrollbar-thumb {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background: rgb(250,237,237);
+    background: linear-gradient(194deg, rgba(250,237,237,1) 2%, rgba(163,191,242,1) 21%, rgba(136,159,249,1) 44%, rgba(221,127,198,1) 81%);
 }
 
 #body-page-home {
-    background-image: url(../images/background-image.jpg);
-    background-size: cover;
+    background: rgb(250,237,237);
+    background: linear-gradient(194deg, rgba(250,237,237,1) 2%, rgba(163,191,242,1) 21%, rgba(136,159,249,1) 44%, rgba(221,127,198,1) 81%);
 }
 
 header{
@@ -177,8 +179,8 @@ header{
     margin-left: -10vw;
     margin-top: 5vh;
     display: flex;
-    width: 130.5%;
-    height: 70vh;
+    min-width: 132.5%;
+    height: 80vh;
 }
 
 #legenda-text-pratica{
@@ -231,13 +233,14 @@ header{
 }
 
 #text-meditacao ul{
-    margin-top: 3vw;
+    margin-top: 5vw;
 }
+
 #text-meditacao li {
         font-family: Verdana;
         font-size: 25px;
         color: white;
-        margin-top: 2vh;
+        margin-top: 3vh;
         margin-left: -14.5vw;
         width: 52vw;
         height: 5vh;
@@ -262,6 +265,62 @@ header{
         background-color: gray;
     }
 
+
+
+    /*
+        RESPONSIVIDADE
+    */
+
+@media only screen and (max-width: 768px) {
+    #part-one-body {
+        margin-left: 0;
+        margin-top: 5vh;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        border-radius: 0;
+    }
+
+    #legenda-text-pratica {
+        width: 20vw;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    #container-image-home {
+        width: 100%;
+        height: auto;
+        margin-top: 3vh;
+    }
+
+    #image-home {
+        margin-top: 2vh;
+        height: 130px;
+        width: 100%;
+    }
+
+    #text-meditacao {
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
+
+        #text-meditacao p {
+            margin: 0;
+            width: 90%;
+            font-size: 20px;
+        }
+
+        #text-meditacao li {
+            margin: 0;
+            font-size: 20px;
+        }
+
+    .nav-link-meditacao {
+        margin-top: 10px;
+        font-size: 20px;
+    }
+}
 /* PART COMUNIDADE */
 
 .part-comunidade {
@@ -544,6 +603,7 @@ header{
     height: 70vh;
     width: 40vw;
     background-color: white;
+    border-radius: 20px;
     border: none;
     margin-top: 3vh;
     margin-left: 3vw;
@@ -558,8 +618,8 @@ header{
 }
 
 #header-cadastro h1{
-    font-family: 'Lucida Sans';
-    color: darkblue;
+    font-family: 'Yu Gothic UI';
+    color: black;
     
 }
 
@@ -572,9 +632,9 @@ header{
 .form label {
     margin-top: 2vh;
     margin-left: 15px;
-    font-family: Verdana;
+    font-family: 'Yu Gothic UI';
     font-size: 20px;
-    color: darkblue;
+    color: black;
 }
 
 
@@ -620,16 +680,16 @@ header{
 .form-email label {
     margin-top: 2vh;
     margin-left: 15px;
-    font-family: Verdana;
+    font-family: 'Yu Gothic UI';
     font-size: 20px;
-    color: darkblue;
+    color: black;
 }
 
 .form-senha label {
     margin-top: 2vh;
-    font-family: Verdana;
+    font-family: 'Yu Gothic UI';
     font-size: 20px;
-    color: darkblue;
+    color: black;
 }
 
 .form-email input{
@@ -665,9 +725,9 @@ header{
 
 .form-datanascimento label {
     margin-left: 15px;
-    font-family: Verdana;
+    font-family: 'Yu Gothic UI';
     font-size: 20px;
-    color: darkblue;
+    color: black;
 }
 
 .form-genero {
@@ -678,9 +738,9 @@ header{
     margin-left: 5vw;
 }
     .form-genero label {
-        font-family: Verdana;
+        font-family: 'Yu Gothic UI';
         font-size: 20px;
-        color: darkblue;
+        color: black;
     }
 
 .form-datanascimento input {
@@ -724,8 +784,127 @@ header{
 
 #shadow-forms {
     background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
     border: none;
     height: 70vh;
     width: 40vw;
 }
 
+
+/* CSS DO FORMS LOGIN */
+
+#form-login{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-login {
+    min-height: 55vh;
+    min-width: 20vw;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    margin-top: 3vh;
+    margin-left: 5vw;
+}
+
+#header-login{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+    #header-login h1 {
+        color: black;
+        margin: 0 auto;
+        font-size: 36px;
+        font-family: 'Yu Gothic UI';
+    }
+
+
+.form-login {
+    margin-top: 3vh;
+    height: 10vh;
+    width: 90%;
+    margin-left: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.form-login > label{
+    font-family: 'Yu Gothic UI';
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.form-login > input{
+    min-height: 3vh;
+    max-height: 5vh;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+#shadow-form-login {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    border: none;
+    min-height: 55vh;
+    min-width: 20vw;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .container-login {
+        width: 90%;
+        margin: 0 auto;
+        margin-left: 20vw;
+    }
+
+    #shadow-form-login {
+        min-width: 90%;
+        margin-left: -45%;
+    }
+
+    .form-login {
+        margin-top: 10px;
+        height: auto;
+    }
+}
+
+/* Para telas maiores que 600px de largura */
+@media only screen and (min-width: 600px) {
+
+    #form-login {
+        height: 80vh;
+        margin-top: 0;
+    }
+
+    .container-login {
+        min-height: 55vh;
+        min-width: 30vw;
+        margin: 3vh 0 0 2vw;
+    }
+
+    #shadow-form-login {
+        min-height: 55vh;
+        min-width: 20vw;
+        margin: -15vh 0 0 0vw;
+    }
+
+    .form-login {
+        margin-top: 3vh;
+        height: 10vh;
+        width: 90%;
+        margin-left: 23px;
+    }
+}
+
+
+#href-cadastre-se{
+    margin-left: 7.5vw;
+}

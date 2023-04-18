@@ -191,5 +191,10 @@ namespace WIS_PI.Controllers
         {
           return (_context.Usuario?.Any(e => e.UsuarioId == id)).GetValueOrDefault();
         }
+
+        public IActionResult Login()
+        {
+            return View();
+        }
     }
 }
